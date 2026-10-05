@@ -1,0 +1,57 @@
+Actúa como un Ingeniero de Software Senior (especialista en Next.js y React) y un Diseñador UI/UX de alto nivel (estilo Awwwards, minimalista y premium).
+
+Tu tarea es generar el código inicial (frontend) para el "Museo de Patología Veterinaria (MPV) - UNC". No quiero un diseño genérico de plantilla tipo Bootstrap; quiero un diseño sofisticado, académico, asimétrico y con excelente uso del espacio en blanco (negativo).
+
+### STACK TECNOLÓGICO:
+- Next.js (App Router) o React funcional.
+- Tailwind CSS (para todo el estilizado).
+- Framer Motion (para animaciones reveal al hacer scroll y microinteracciones).
+- Lucide React (para iconos).
+- Tipografía: 'Playfair Display' (para títulos/Serif) e 'Inter' (para textos/Sans-serif).
+
+### GUÍA DE ESTILOS (AESTHETICS):
+- Colores principales basados en el logo institucional: 
+  - Brand Red: #7A2C2C (Acentos, botones hover, subrayados)
+  - Brand Green: #1f6032 (Detalles sutiles)
+  - Backgrounds: #0f1115 (Oscuro profundo para Hero y casos destacados), #f8f9fa (Crema muy claro para lectura).
+- Sensación general: "Dark Academia", Galería de arte contemporáneo, rigurosidad científica.
+
+### DATA INICIAL (MOCK DATA):
+Crea un array de objetos en JavaScript con las siguientes patologías. Asigna a cada una un ID, Nombre, Especie (Bovino, Porcino, Ovino, Canino, Felino, etc.), Categoría (Desarrollo, Músculo-esquelética, Reproductiva, Adquirida) y una breve descripción ficticia pero académica. 
+Lista de patologías a incluir: WRY NOSE, VESICULA DOBLE EN CANINO, TUMOR DE CELULAS ESCAMOSAS, SINDROME DE PRUNE BELLY, SINDACTILIA EN PORCINOS, Schistosoma reflexus incompleto, QUISTES FOLICULARES BILATERALES, PSEUDOHERMAFRODITISMO, PLEURITIS CRONICA, PIE ZAMBO EN CUY, Milagritos (Bicefalia incompleta bovina), MICROTIA EN OVINO, HIDRONEFROSIS, Ciclopia y arrinia canina, AMELIA POSTERIOR.
+
+### ESTRUCTURA DE LA PÁGINA (LANDING PAGE & CATÁLOGO):
+
+Construye una Landing Page interactiva con las siguientes secciones:
+
+1. NAV & HERO SECTION (Modo oscuro):
+- Navbar fijo con efecto "glassmorphism" al hacer scroll. Debe tener el logo "LOGO.png" (usa un placeholder `<img>`).
+- Hero: Tipografía enorme (Serif) que diga "Museo de Patología Veterinaria". Subtítulo académico. Botón elegante "Explorar Colección". Debe sentirse inmersivo.
+
+2. SOBRE EL MUSEO (Modo claro):
+- Grid asimétrico. Texto sobre la misión de conservar casos patológicos para la investigación científica. 
+- Iconos minimalistas para Misión y Visión.
+
+3. ÁREAS DE ESTUDIO (Taxonomía):
+- Un slider horizontal nativo (CSS scroll-snap) con tarjetas grandes y elegantes para: Alteraciones del Desarrollo, Músculo-esqueléticas, Reproductivas y Enfermedades Adquiridas.
+
+4. SALA ESPECIAL / CASO DESTACADO (Modo oscuro):
+- Layout tipo revista editorial para el caso "Milagritos" (Bicefalia incompleta bovina). 
+- Imagen grande a la izquierda, gran título tipográfico a la derecha, tags (Bovino, Caso Especial), descripción científica y un botón "Examinar Ficha".
+
+5. CATÁLOGO DIGITAL (El explorador):
+- Input de búsqueda minimalista (borde inferior solamente).
+- Botones de filtro (Todos, Desarrollo, Esqueléticas, Reproductivas, Adquiridas) con estilo "Pill" (píldora).
+- Grid (tipo Masonry o Grid estricto de 3-4 columnas) que renderice tarjetas para cada patología. 
+- Las tarjetas deben tener hover effects sutiles (zoom en la imagen placeholder, elevación de la tarjeta).
+
+6. FOOTER:
+- Limpio, institucional. Enlaces de navegación, contacto (Facultad de Ciencias Veterinarias, UNC) y redes.
+
+### REQUERIMIENTOS FUNCIONALES Y DE CÓDIGO:
+- Escribe código limpio, moderno y modular. Si debes generar todo en un solo archivo grande para demostración, separa lógicamente las secciones con comentarios claros.
+- Implementa la lógica de filtrado y búsqueda en el catálogo usando estado de React (`useState`).
+- Asegúrate de que el diseño sea 100% responsivo (Mobile first, pero espectacular en Desktop).
+- No uses `alert()`. Crea un diseño para un "Modal" (Ficha técnica ampliada) que se abra al hacer clic en una tarjeta del catálogo, oscureciendo el fondo.
+
+Por favor, genera el código completo para esta vista principal (puedes llamarlo `page.tsx` o `App.jsx`).

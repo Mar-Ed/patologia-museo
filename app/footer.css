@@ -1,0 +1,20 @@
+/* Keep component styles separate from the Tailwind entry point so production
+   bundling retains the footer layout and map presentation. */
+.footer-layout { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.6fr) minmax(0,1fr); gap:44px; }
+.footer-layout > div { min-width:0; }
+.footer-email { display:flex; align-items:center; gap:10px; margin-top:23px; color:#d1e3d8; font-size:13px; }
+.footer-email svg,.footer-address svg { flex-shrink:0; }
+.footer-email span { overflow-wrap:anywhere; }
+.footer-email:hover,.footer-address:hover { color:white; }
+.footer-map-preview { position:relative; isolation:isolate; margin-top:16px; height:180px; overflow:hidden; border:1px solid #ffffff20; border-radius:14px; background:#e4ece4; }
+.footer-map-preview iframe { display:block; width:100%; height:100%; border:0; pointer-events:none; }
+.footer-map-link { position:absolute; inset:0; display:flex; align-items:flex-end; padding:12px; background:linear-gradient(transparent 55%,#0a211755); }
+.footer-map-link > span { display:inline-flex; align-items:center; gap:9px; padding:7px 11px; border-radius:8px; background:#142e25ee; color:#fff; font-size:11px; }
+.footer-map-link:hover > span { background:#24615f; }
+.footer-address { display:flex; align-items:flex-start; gap:10px; margin-top:16px; color:#c4d6cb; font-size:13px; }
+.footer-address svg { margin-top:3px; }
+.footer-address small { display:block; margin-top:3px; color:#aeb7b2; font-size:12px; }
+.site-footer a:focus-visible { outline:2px solid #b1d9c4; outline-offset:4px; border-radius:4px; }
+.footer-map-link:focus-visible { outline-offset:-4px!important; }
+@media (max-width:900px) { .footer-layout { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:32px; }.footer-brand { grid-column:1/-1; } }
+@media (max-width:540px) { .footer-layout { grid-template-columns:minmax(0,1fr); gap:32px; }.footer-brand { grid-column:auto; }.footer-map-preview { height:190px; }.site-footer { padding-block:44px; } }

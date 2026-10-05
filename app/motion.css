@@ -1,0 +1,13 @@
+/* Scroll effects use Web Animations, without changing React's HTML attributes. */
+.button-primary,.button-secondary,.button-light,.scientific-card-link svg {
+  transition:transform 250ms,box-shadow 250ms,border-color 250ms,translate 220ms;
+}
+@media (hover:hover) and (pointer:fine) {
+  .button-primary:hover,.button-secondary:hover,.button-light:hover { translate:0 -2px; }
+  .scientific-card:hover .scientific-card-link svg { translate:2px -2px; }
+  [data-scroll-reveal].group:hover { translate:0 -4px; }
+  .scientific-card-link svg { transition:translate 220ms ease; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .button-primary:hover,.button-secondary:hover,.button-light:hover,.scientific-card:hover,.scientific-card-link svg,[data-scroll-reveal].group:hover,.video-play-overlay:hover .video-play-icon { translate:none!important; transform:none!important; }
+}

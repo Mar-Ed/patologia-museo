@@ -1,0 +1,32 @@
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+@source "../hooks";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root { --background:#f5f3ee; --foreground:#121515; --card:#fff; --card-foreground:#121515; --popover:#fff; --popover-foreground:#121515; --primary:#121515; --primary-foreground:#fff; --secondary:#eceee9; --secondary-foreground:#121515; --muted:#eceee9; --muted-foreground:#66706c; --accent:#f3e7e5; --accent-foreground:#7a2c2c; --destructive:#b42318; --border:#d9ddd8; --input:#d9ddd8; --ring:#7a2c2c; --radius:.5rem; }
+@theme inline { --color-background:var(--background); --color-foreground:var(--foreground); --color-card:var(--card); --color-card-foreground:var(--card-foreground); --color-popover:var(--popover); --color-popover-foreground:var(--popover-foreground); --color-primary:var(--primary); --color-primary-foreground:var(--primary-foreground); --color-secondary:var(--secondary); --color-secondary-foreground:var(--secondary-foreground); --color-muted:var(--muted); --color-muted-foreground:var(--muted-foreground); --color-accent:var(--accent); --color-accent-foreground:var(--accent-foreground); --color-destructive:var(--destructive); --color-border:var(--border); --color-input:var(--input); --color-ring:var(--ring); --font-sans:"Inter",ui-sans-serif,system-ui,sans-serif; --font-serif:"Playfair Display",Georgia,serif; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:"Inter",ui-sans-serif,system-ui,sans-serif; font-size:16px; line-height:1.65; }
+body::before { content:""; position:fixed; inset:0; z-index:100; pointer-events:none; opacity:.025; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.site-shell { width:min(1180px,calc(100% - 40px)); margin-inline:auto; }
+.section { padding:clamp(4rem,8vw,8rem) 0; }
+.eyebrow { color:#7a2c2c; text-transform:uppercase; letter-spacing:.18em; font-weight:750; font-size:.75rem; }
+.section-head { display:flex; align-items:end; justify-content:space-between; gap:2rem; margin-bottom:2.5rem; }
+.section-head h2 { margin-top:.5rem; font:500 clamp(2.4rem,5vw,4.5rem)/1 "Playfair Display",serif; }
+.section-head p { max-width:540px; color:#66706c; }
+.button-primary,.button-secondary,.button-light { display:inline-flex; min-height:48px; align-items:center; justify-content:center; border:1px solid #121515; border-radius:999px; padding:.7rem 1.2rem; font-weight:650; transition:.2s; }
+.button-primary { background:#121515; color:white; }.button-primary:hover { background:#7a2c2c; border-color:#7a2c2c; }
+.button-secondary { background:transparent; color:#121515; }.button-secondary:hover { background:#7a2c2c; border-color:#7a2c2c; color:white; }
+.button-light { background:white; border-color:white; color:#121515; }.button-light:hover { background:#e2c3bd; border-color:#e2c3bd; }
+.page-intro { border-bottom:1px solid #d9ddd8; padding:clamp(4rem,8vw,8rem) 0 4rem; }
+.page-intro h1 { margin:.7rem 0 1.5rem; font:500 clamp(3rem,7vw,7rem)/.95 "Playfair Display",serif; letter-spacing:-.04em; }
+.page-intro p { max-width:760px; color:#46504b; font-size:1.15rem; }
+.prose-mpv { max-width:800px; color:#3f4944; }.prose-mpv h2 { margin:2rem 0 1rem; color:#121515; font:500 2.4rem/1.08 "Playfair Display",serif; }.prose-mpv h3 { margin:1.8rem 0 .8rem; color:#121515; font:600 1.3rem "Playfair Display",serif; }.prose-mpv p { margin:1rem 0; }.prose-mpv blockquote { margin:2rem 0; border-left:3px solid #7a2c2c; background:white; padding:1.2rem 1.5rem; font:1.2rem/1.5 "Playfair Display",serif; }.prose-mpv ul { margin:1rem 0; padding-left:1.5rem; list-style:disc; }.prose-mpv li { margin:.4rem 0; }
+.notice { margin:1.5rem 0; border-left:3px solid #7a2c2c; background:#f3e7e5; padding:1rem 1.2rem; }
+.skip-link { position:fixed; left:1rem; top:-5rem; z-index:200; background:white; padding:.75rem 1rem; }.skip-link:focus { top:1rem; }
+@media (max-width:760px) { .section-head { display:block; }.section-head p { margin-top:1rem; }.site-shell { width:min(100% - 28px,1180px); } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; transition:none!important; } }
+

@@ -1,0 +1,155 @@
+/* Scientific editorial system: restrained color, specimen-first imagery and readable measure. */
+.scientific-case { --case-ink:#172b2e; --case-accent:#24615f; --case-muted:#637476; background:#f8f9f6; color:var(--case-ink); }
+.case-hero { padding:30px 0 56px; background:linear-gradient(120deg,#f8f9f6,#edf2ee); border-bottom:1px solid #dce5df; }
+.case-breadcrumb { display:flex; align-items:center; gap:14px; color:#6e7e7d; font-size:12px; }
+.case-breadcrumb a { display:flex; align-items:center; gap:7px; color:#24615f; }
+.case-breadcrumb-code { margin-left:auto; font-family:monospace; letter-spacing:.08em; }
+.case-hero-grid { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.8fr); gap:70px; align-items:center; padding-top:42px; }
+.case-hero-text-only { grid-template-columns:1fr; max-width:920px; }
+.case-labels { display:flex; flex-wrap:wrap; gap:9px; margin-bottom:24px; }
+.case-labels span { padding:5px 12px; border:1px solid #ccdbd4; border-radius:999px; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:650; color:#24615f; }
+.case-labels span:first-child { background:#24615f; border-color:#24615f; color:#fff; }
+.case-hero h1 { max-width:780px; font:500 clamp(2.5rem,4.8vw,4.9rem)/1.06 "Playfair Display",Georgia,serif; letter-spacing:-.035em; text-wrap:balance; }
+.case-lead { margin-top:25px; max-width:650px; font-size:17px; line-height:1.85; color:#536a69; }
+.case-hero-bottom { margin-top:33px; border-top:1px solid #d4dfd8; padding-top:21px; display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:space-between; font-size:11px; color:#526e69; }
+.case-hero-bottom > span { max-width:65%; letter-spacing:.03em; }
+.case-hero-bottom a { display:flex; gap:8px; align-items:center; font-weight:650; color:#24615f; }
+.case-hero-image { position:relative; overflow:hidden; background:#fff; border:1px solid #e0e7e1; border-radius:20px; padding:20px; box-shadow:0 24px 65px -35px #19433230; }
+.case-specimen { width:100%; height:360px; object-fit:contain; }
+.case-tabbar { position:sticky; top:76px; z-index:40; background:#f8f9f6f5; backdrop-filter:blur(16px); border-bottom:1px solid #dce5df; }
+.case-tabbar .site-shell { overflow-x:auto; }
+.case-tablist { display:flex; justify-content:flex-start; height:auto; width:max-content; min-width:100%; gap:25px; padding:0; background:none; }
+.case-tab { display:inline-flex; flex:1; align-items:center; justify-content:center; white-space:nowrap; padding:22px 0; border-radius:0; height:auto; font-size:12px; font-weight:550; color:#687a76; }
+.case-tab[data-state=active] { color:#24615f; }
+.case-tab[aria-selected=true] { box-shadow:inset 0 -2px 0 #24615f; }
+.case-tab:focus-visible { outline:2px solid #24615f; outline-offset:-4px; }
+.case-tab span { margin-left:3px; border-radius:5px; background:#e4ece6; padding:1px 5px; font-size:10px; }
+.case-body { display:grid; grid-template-columns:minmax(0,1fr) 265px; gap:85px; padding-top:58px; padding-bottom:65px; min-height:550px; }
+.case-body-gallery { display:block; }
+.case-main { min-width:0; }
+.case-kicker { display:block; font-size:10px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; color:#24615f; }
+.chapter-heading { margin-bottom:35px; }
+.chapter-heading h2,.gallery-heading h2 { margin-top:11px; font:500 clamp(2rem,3.3vw,3rem)/1.15 "Playfair Display",Georgia,serif; letter-spacing:-.025em; text-wrap:balance; }
+.chapter-heading > p { margin-top:17px; color:#637476; font-size:14px; }
+.scientific-section { margin:0 0 35px; }
+.scientific-section h3 { margin-bottom:15px; font-size:15px; font-weight:650; color:#1b3939; }
+.scientific-section > p { max-width:740px; margin-bottom:13px; font-size:15px; line-height:1.95; color:#516463; }
+.section-citations { display:flex; gap:12px; flex-wrap:wrap; margin-top:15px; }
+.section-citations a { display:inline-flex; gap:4px; align-items:center; font-size:10px; color:#637e76; border-bottom:1px solid #d7e2da; }
+.scientific-points { display:grid; gap:15px; padding:0; margin:0; list-style:none; }
+.scientific-points li { display:flex; gap:14px; align-items:baseline; }
+.scientific-points li > span { width:5px; height:5px; border-radius:50%; background:#397b6f; flex-shrink:0; }
+.scientific-points p { color:#516463; font-size:15px; line-height:1.85; }
+.clinical-insight { display:flex; align-items:flex-start; gap:18px; background:#eaf1ec; border:1px solid #d8e6dc; border-radius:14px; padding:25px; color:#2c6556; }
+.clinical-insight > svg { flex-shrink:0; margin-top:3px; }
+.clinical-insight span { display:block; font-size:11px; font-weight:700; margin-bottom:9px; letter-spacing:.04em; }
+.clinical-insight p { font-size:14px; line-height:1.85; margin-top:8px; }
+.case-sidebar { position:sticky; top:175px; height:fit-content; border:1px solid #dce5df; border-radius:16px; padding:25px; background:#fff; }
+.case-sidebar-top { display:flex; gap:12px; align-items:center; color:#24615f; margin-bottom:25px; }
+.case-sidebar-top span { font-size:11px; text-transform:uppercase; letter-spacing:.1em; }
+.case-sidebar dl { display:grid; gap:22px; }
+.case-sidebar dt { font-size:10px; letter-spacing:.06em; color:#74857f; text-transform:uppercase; }
+.case-sidebar dd { margin-top:5px; font-size:13px; line-height:1.7; color:#314b45; font-weight:550; }
+.case-code { font-family:monospace; }
+.sidebar-divider { height:1px; background:#e4ebe5; margin:24px 0; }
+.case-sidebar > p { font:italic 16px/1.6 Georgia,serif; color:#74857f; }
+.case-sidebar > a { display:flex; align-items:center; justify-content:space-between; font-size:11px; color:#24615f; margin-top:25px; }
+.local-findings { margin-top:40px; border-top:1px solid #dce5df; padding-top:32px; }
+.local-findings-heading { display:flex; gap:13px; align-items:center; color:#24615f; }
+.local-findings-heading h3 { margin-top:5px; font:500 26px/1.2 Georgia,serif; color:#203e37; }
+.local-case { padding:24px 0; border-bottom:1px solid #e1e9e2; }
+.local-case h4 { font-size:13px; color:#24615f; font-weight:650; margin-bottom:13px; }
+.local-case ul { padding-left:19px; list-style:disc; color:#536964; font-size:14px; line-height:1.9; }
+.local-case li { padding-left:5px; margin-top:9px; }
+.editorial-note { margin-top:25px; font-size:11px; line-height:1.9; color:#73857e; }
+.diagnostic-principle { padding:23px; border:1px solid #dce5df; border-radius:12px; display:flex; gap:14px; color:#24615f; }
+.diagnostic-principle svg { flex-shrink:0; margin-top:3px; }
+.diagnostic-principle p { font-size:13px; line-height:1.85; }
+.gallery-heading { display:flex; gap:25px; justify-content:space-between; align-items:end; margin-bottom:32px; }
+.gallery-total { color:#73857e; font-size:12px; white-space:nowrap; }
+.scientific-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.gallery-image { position:relative; padding:16px; background:#fff; border:1px solid #e1e8e2; border-radius:16px; overflow:hidden; cursor:zoom-in; transition:border-color .25s,box-shadow .25s,transform .25s; }
+.gallery-image:hover { border-color:#7caa94; box-shadow:0 18px 35px -25px #28544755; transform:translateY(-2px); }
+.gallery-photo { width:100%; height:350px; object-fit:contain; }
+.gallery-expand { position:absolute; right:15px; top:15px; display:grid; place-items:center; width:34px; height:34px; background:#fffffff0; border:1px solid #e1e8e2; border-radius:50%; color:#426c5c; opacity:0; transition:opacity .2s; }
+.gallery-image:hover .gallery-expand,.gallery-image:focus-visible .gallery-expand { opacity:1; }
+.scientific-viewer { position:fixed; inset:0; margin:auto; width:min(1150px,94vw); max-width:none; border:1px solid #e1e8e2; border-radius:18px; padding:20px; background:#fff; color:#203e37; box-shadow:0 30px 100px #0005; }
+.scientific-viewer::backdrop { background:#0d1f20d9; backdrop-filter:blur(6px); }
+.viewer-toolbar { display:flex; align-items:center; justify-content:space-between; gap:15px; margin-bottom:16px; }
+.viewer-toolbar p { font-size:13px; }
+.viewer-toolbar button,.viewer-controls button { display:grid; place-items:center; width:40px; height:40px; border:1px solid #dce5df; border-radius:50%; }
+.viewer-photo { width:100%; height:65vh; object-fit:contain; }
+.viewer-controls { display:flex; align-items:center; justify-content:center; gap:30px; margin-top:18px; }
+.viewer-controls span { font:11px monospace; color:#73857e; }
+.gallery-empty { border:1px solid #dce5df; border-radius:16px; padding:50px; background:#fff; text-align:center; color:#637476; }
+.gallery-empty svg { margin:0 auto 20px; color:#24615f; }
+.gallery-empty h3 { font:500 27px Georgia,serif; margin-bottom:14px; color:#203e37; }
+.gallery-empty p { max-width:550px; margin:auto; font-size:14px; line-height:1.9; }
+.scientific-references { display:grid; gap:14px; }
+.scientific-references a { display:flex; gap:22px; align-items:center; justify-content:space-between; border:1px solid #dce5df; padding:24px; background:#fff; border-radius:13px; transition:border-color .2s; }
+.scientific-references a:hover { border-color:#719f8b; }
+.scientific-references span { font-size:10px; color:#688a77; }
+.scientific-references h3 { margin-top:9px; font-size:14px; font-weight:550; color:#2b4b40; line-height:1.7; }
+.scientific-references svg { flex-shrink:0; color:#688a77; }
+.study-cards { display:grid; gap:17px; }
+.scientific-study { border:1px solid #dce5df; padding:26px; background:#fff; border-radius:14px; }
+.scientific-study h3 { font:500 23px/1.4 Georgia,serif; }
+.scientific-study button { margin-top:22px; display:flex; gap:12px; align-items:center; color:#24615f; font-size:12px; }
+.scientific-study p { border-top:1px solid #e2ebe4; padding-top:20px; margin-top:20px; font-size:14px; line-height:1.9; color:#516463; }
+.case-footer-note { padding:22px 0 35px; border-top:1px solid #dce5df; font-size:10px; color:#73857e; }
+.scientific-card { display:flex; flex-direction:column; min-height:320px; padding:25px; border:1px solid #dce5df; border-radius:15px; background:#fff; transition:transform .25s,box-shadow .25s,border-color .25s; }
+.scientific-card:hover { transform:translateY(-4px); border-color:#a2bdae; box-shadow:0 20px 40px -25px #254f3c45; }
+.scientific-card-meta { display:flex; gap:12px; align-items:center; justify-content:space-between; color:#397565; font-size:10px; text-transform:uppercase; letter-spacing:.06em; }
+.scientific-card-meta small { color:#8a9990; font:10px monospace; }
+.scientific-card-heading { display:flex; gap:18px; align-items:center; margin:24px 0 18px; }
+.scientific-card h2 { color:#213b31; font:500 26px/1.15 Georgia,serif; text-wrap:balance; }
+.scientific-card-image { width:100px; height:125px; object-fit:contain; flex-shrink:0; }
+.scientific-card > p { color:#6c7d72; font-size:13px; line-height:1.8; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.scientific-card-link { display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:22px; color:#397565; font-size:11px; }
+.home-acknowledgments { border-top:1px solid #dce5df; background:#eef2ec; padding:65px 0; }
+.home-acknowledgments .site-shell { display:grid; grid-template-columns:1fr 1fr; gap:65px; }
+.home-acknowledgments h2 { color:#203e37; font:500 28px Georgia,serif; margin-bottom:20px; }
+.home-acknowledgments p { color:#62746a; font-size:13px; line-height:1.9; margin-top:12px; }
+.scientific-case :focus-visible,.scientific-card:focus-visible { outline:2px solid #397b6f; outline-offset:5px; }
+.document-synthesis { margin:0 0 24px; padding:20px 24px; border-left:2px solid #397565; background:#f1f5f0; border-radius:0 10px 10px 0; }
+.document-synthesis .case-kicker { display:block; margin-bottom:12px; }
+.document-synthesis-structured { padding:24px; }
+.clinical-record-group { margin:18px 0; padding:18px 20px; border:1px solid #dae5dc; border-radius:12px; background:#ffffffb8; }
+.clinical-record-group h4 { margin:0 0 16px; font:500 21px/1.3 Georgia,serif; color:#244c40; }
+.clinical-record-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 24px; margin:0; }
+.clinical-record-fields > div { min-width:0; padding:12px 0; border-top:1px solid #e3ebe5; }
+.clinical-record-fields dt { font-size:10px; line-height:1.6; font-weight:650; letter-spacing:.08em; text-transform:uppercase; color:#667d72; }
+.clinical-record-fields dd { margin:5px 0 0; font-size:14px; line-height:1.65; font-weight:550; color:#203e37; overflow-wrap:anywhere; }
+.clinical-record-narrative { margin:26px 0 12px; font-size:13px; font-weight:650; color:#244c40; }
+.document-synthesis-structured > p { margin:0 0 16px; font-size:14px; line-height:1.85; color:#516463; }
+@media (max-width:540px) {
+  .document-synthesis-structured { padding:18px 16px; }
+  .clinical-record-group { padding:16px; }
+  .clinical-record-group h4 { font-size:19px; }
+  .clinical-record-fields { grid-template-columns:minmax(0,1fr); }
+}
+.video-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:1100px; margin-inline:auto; align-items:start; }
+.video-gallery-single { grid-template-columns:minmax(0,1fr); max-width:860px; }
+.video-record { min-width:0; margin:0; overflow:hidden; border:1px solid #dce5df; border-radius:20px; background:#142820; box-shadow:0 18px 45px -30px #173d3655; }
+.video-stage { position:relative; isolation:isolate; aspect-ratio:16/9; background:#10231e; }
+.video-stage iframe { position:absolute; inset:0; display:block; width:100%; height:100%; border:0; }
+.video-poster { object-fit:contain; }
+.video-caption { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; padding:14px 18px; background:#f1f5f0; color:#244c40; font-size:12px; }
+.video-caption a { display:inline-flex; align-items:center; gap:6px; margin-left:auto; text-decoration:underline; text-underline-offset:3px; }
+.video-access-note { text-align:center; margin-top:24px; }
+.video-play-overlay { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:15px; cursor:pointer; color:#fff; background:linear-gradient(180deg,#0b211510,#0b211545); transition:background .2s; }
+.video-play-icon { display:grid; place-items:center; width:78px; height:78px; padding-left:4px; border:1px solid #ffffffb3; border-radius:50%; background:#173e35de; box-shadow:0 8px 28px #0004; transition:transform .2s,background .2s; }
+.video-play-label { font-size:12px; font-weight:600; letter-spacing:.04em; padding:7px 13px; border-radius:999px; background:#102b25cf; }
+.video-play-overlay:hover .video-play-icon { transform:scale(1.06); background:#24615f; }
+.video-play-overlay:focus-visible { outline:3px solid #d0e6bc; outline-offset:-6px; border-radius:18px; }
+.video-play-resume { background:transparent; }
+.video-play-resume .video-play-icon { width:64px; height:64px; }
+/* Leave the native timeline and playback controls reachable while paused. */
+.video-play-resume { inset:0 0 58px; padding-top:58px; }
+.video-error { padding:18px; background:#f1f5f0; color:#213b31; font-size:13px; }
+.video-error a { text-decoration:underline; }
+@media (max-width:800px) { .video-gallery { grid-template-columns:minmax(0,1fr); max-width:680px; }.video-record { border-radius:16px; } }
+@media (max-width:540px) { .video-play-icon { width:60px; height:60px; }.video-play-icon svg { width:25px; height:25px; }.video-play-overlay { gap:10px; }.video-play-label { font-size:11px; }.video-play-resume .video-play-icon { width:52px; height:52px; } }
+@media (max-width:1024px) { .case-body { gap:38px; grid-template-columns:minmax(0,1fr) 235px; }.case-hero-grid { gap:35px; }.case-tablist { gap:23px; }.case-specimen { height:300px; } }
+@media (max-width:800px) { .case-hero { padding-bottom:35px; }.case-hero-grid { grid-template-columns:1fr; gap:28px; padding-top:30px; }.case-hero-image { max-width:500px; width:100%; }.case-specimen { height:280px; }.case-body { grid-template-columns:1fr; padding-top:35px; gap:35px; }.case-sidebar { position:static; }.case-sidebar dl { grid-template-columns:repeat(3,1fr); gap:15px; }.case-sidebar > p,.sidebar-divider { display:none; }.case-lead { font-size:15px; }.case-tablist { min-width:max-content; }.gallery-photo { height:270px; }.home-acknowledgments .site-shell { grid-template-columns:1fr; gap:35px; } }
+@media (max-width:540px) { .scientific-gallery { grid-template-columns:1fr; gap:15px; }.gallery-photo { height:300px; }.gallery-heading { align-items:start; }.gallery-total { padding-top:4px; font-size:10px; }.case-sidebar dl { grid-template-columns:1fr 1fr; }.case-hero h1 { font-size:2.7rem; }.case-breadcrumb { gap:8px; font-size:10px; }.viewer-photo { height:58vh; }.scientific-viewer { padding:13px; }.scientific-card-image { width:95px; } }

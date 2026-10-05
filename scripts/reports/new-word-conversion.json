@@ -1,0 +1,130 @@
+{
+  "documents": 12,
+  "pathologies": 11,
+  "files": [
+    {
+      "source": "public/nuevos_word/AGNATIA O AGENESIA MANDIBULAR EN BOVINO.docx",
+      "sourceSha256": "9075264208e939fda219d045bed694e095498580da4c9fb0a032f6aa2ddcdf8a",
+      "destination": "public/patologias/agnatia-o-agenesia-mandibular-en-bovino/documento-1.md",
+      "markdownSha256": "f5d0e7a754697c5793d475c4e0f680556a31001939e9f66aead616594a04af28",
+      "retainedParagraphs": 166,
+      "characters": 9609,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/ATRESIA ANAL EN BOVINO.docx",
+      "sourceSha256": "637c2ed9d66d02e759e6a79db773bc341d071452dce512a01f609771a144059b",
+      "destination": "public/patologias/atresia-anal-en-bovino/documento-1.md",
+      "markdownSha256": "422b5102c20e12a43686391d3df1d89396b88ebe2ecc7d2635c1ad8f8a3b9dba",
+      "retainedParagraphs": 26,
+      "characters": 1577,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/ATRESIA NASAL EN BOVINO.docx",
+      "sourceSha256": "8b11175906a7c19bb88cfbca5ba32da7022c8e71c3bfe23263e8476465af9241",
+      "destination": "public/patologias/atresia-nasal-en-bovino/documento-1.md",
+      "markdownSha256": "c09073c396b17fb4459631a9c9c02557f441dcf7faf0a0bb47c28f2491eaf024",
+      "retainedParagraphs": 173,
+      "characters": 9564,
+      "removedNonClinicalParagraphs": [
+        "Te elaboro el informe siguiendo el mismo formato de los anteriores casos de malformaciones congénitas veterinarias, sobre ATRESIA NASAL EN BOVINO (Bos taurus)."
+      ],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/CRANEOTORACOPHAGO EN FELINO.docx",
+      "sourceSha256": "40109434584a1b83746ebd774db2db938609c2f45f72cb10434a641fc05cef8a",
+      "destination": "public/patologias/craneotoracopago-en-felino/documento-1.md",
+      "markdownSha256": "90e4810229297ae47a54446a86ff1e2caccd20121c031eea483f259c119476bc",
+      "retainedParagraphs": 166,
+      "characters": 9091,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/CÁNCER DE PROSTATA EN CANINO.docx",
+      "sourceSha256": "58bc5293bcd953f364a606ebf4199f9306c6a0c1499a78f58b0c9c759a356371",
+      "destination": "public/patologias/cancer-de-prostata-en-canino/documento-1.md",
+      "markdownSha256": "cd093a8efe4cf17043df8b7ccddbec252a5cfb2b2d3f2cd20262edbd80a49e76",
+      "retainedParagraphs": 187,
+      "characters": 9418,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/ENCEFALOCELE EN OVINO.docx",
+      "sourceSha256": "a53fa093cdd1627dfe9cd04703b84a6340823bb4c4685d0a66369593042fe405",
+      "destination": "public/patologias/encefalocele-en-ovino/documento-1.md",
+      "markdownSha256": "04b7b6d3cb68b91a0c477db15eedbd5805abfe3d581313ad4c3805c918a24725",
+      "retainedParagraphs": 180,
+      "characters": 9509,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/LEUCOSIS BOVINA.docx",
+      "sourceSha256": "1c7f21ed13ce346d4920b9147cc42805d3541926d3c8a3613aa5f58e2d8328ca",
+      "destination": "public/patologias/leucosis-bovina/documento-1.md",
+      "markdownSha256": "3d794efe82a1d85e5801545cd617a45fadd249a67f80a1dfa936dbbe13b03f37",
+      "retainedParagraphs": 185,
+      "characters": 9361,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/MIOCARCINOMA EN BOVINO.docx",
+      "sourceSha256": "6b9c618d527758306f26eeaa6aab4f8ad74489750cbd14d94c693d2b30f9ffde",
+      "destination": "public/patologias/miocarcinoma-en-bovino/documento-1.md",
+      "markdownSha256": "c702a028d71cd85ca5c1b43c0474e0138d1409ead119213ed8fce4e44ff764f1",
+      "retainedParagraphs": 180,
+      "characters": 9508,
+      "removedNonClinicalParagraphs": [
+        "Te elaboro el informe siguiendo el mismo formato de los anteriores casos veterinarios, sobre MIOCARCINOMA EN BOVINO (Bos taurus)."
+      ],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/MIOCARCINOMA EN BOVINO (1).docx",
+      "sourceSha256": "4469e4ee0cb119573859ee15f26d2e589b513dd1cbdd601dec36e31588a75369",
+      "destination": "public/patologias/miocarcinoma-en-bovino/documento-2.md",
+      "markdownSha256": "99042f51dbacf40a9b68a6cde5c9e5d3d82f3b5c90d075d1fe7e7d38dc00b900",
+      "retainedParagraphs": 26,
+      "characters": 1597,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/POLICRUSIS EN CUY.docx",
+      "sourceSha256": "e8209ea3449ebc2a5ebe20170a17600352be6bae799bce2f729109e2b268b1a4",
+      "destination": "public/patologias/policrusis-en-cuy/documento-1.md",
+      "markdownSha256": "e2e50c6f42875f1d621ddbd127edf10b4385452fccb136a1bf8aacc54ce5042e",
+      "retainedParagraphs": 168,
+      "characters": 8994,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/POLIDACTILIA PORCINA.docx",
+      "sourceSha256": "68c7890fbf3c7df48a7ae448ca2734c516384dfc75bf74b0b6ff5b2970a72ae4",
+      "destination": "public/patologias/polidactilia-porcina/documento-2.md",
+      "markdownSha256": "89f1b40b3704c341f932741edf4bffc8d83f0f99a7e0b60e9712fc855f87c22c",
+      "retainedParagraphs": 25,
+      "characters": 1483,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    },
+    {
+      "source": "public/nuevos_word/PSEUDO BICEFALIA (BIFASIA) EN BOVINO.docx",
+      "sourceSha256": "71e2d7ea7fad3ccdddc0d4ec3ca11c55cea826b33ea8a9eac5615a2d6c7edad5",
+      "destination": "public/patologias/pseudo-bicefalia-bifasia-en-bovino/documento-1.md",
+      "markdownSha256": "7b12d83ccb6e510d0583ed62c0607ac4b74df2143d731a90ff6b45bad9b450b6",
+      "retainedParagraphs": 27,
+      "characters": 2129,
+      "removedNonClinicalParagraphs": [],
+      "status": "added"
+    }
+  ]
+}
