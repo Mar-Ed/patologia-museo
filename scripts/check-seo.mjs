@@ -10,6 +10,7 @@ const records = content.getCatalog();
 const manifest = JSON.parse(fs.readFileSync(".next/prerender-manifest.json", "utf8"));
 const routes = Object.keys(manifest.routes).filter(route => !route.startsWith("/_") && !["/robots.txt", "/sitemap.xml"].includes(route));
 const linked = new Set();
+const indexableRoutes = [];
 // Node fetch normalizes Host; use the HTTP client to exercise domain routing.
 function requestWithHost(url, host) {
   return new Promise((resolve, reject) => {
@@ -22,6 +23,7 @@ function requestWithHost(url, host) {
 }
 for (const route of routes) {
   const html = fs.readFileSync(`.next/server/app${route === "/" ? "/index" : route}.html`, "utf8");
+  if (!/<meta name="robots" content="[^"]*noindex/.test(html)) indexableRoutes.push(route);
   const canonical = `${origin}${route === "/" ? "" : route}`;
   assert.ok(html.includes(`rel="canonical" href="${canonical}"`), `Canonical: ${route}`);
   assert.ok(html.includes(`property="og:url" content="${canonical}"`), `Open Graph URL: ${route}`);
@@ -51,7 +53,7 @@ for (const record of records) assert.ok(linked.has(record.slug), `Reachable with
 const xml = fs.readFileSync(".next/server/app/sitemap.xml.body", "utf8");
 const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
 assert.equal(new Set(urls).size, urls.length);
-assert.deepEqual([...urls].sort(), routes.map(route => `${origin}${route}`).sort());
+assert.deepEqual([...urls].sort(), indexableRoutes.map(route => `${origin}${route}`).sort());
 assert.ok(!xml.includes("<lastmod>"), "Do not invent modification dates");
 const robots = fs.readFileSync(".next/server/app/robots.txt.body", "utf8");
 assert.ok(robots.includes(`Sitemap: ${origin}/sitemap.xml`));

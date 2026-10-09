@@ -3,10 +3,12 @@ import { SITE_URL } from "@/lib/site-config";
 import { getPathologyRecords } from "@/lib/pathology-content";
 import { categoryInfo } from "@/lib/pathologies";
 import { CATALOG_PAGE_SIZE, catalogPagePath } from "@/lib/catalog-pagination";
+import { hasRealPublications } from "@/lib/publications";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const records = getPathologyRecords();
   const paths = ["/", "/museo", "/educacion", "/catalogo"];
+  if (hasRealPublications) paths.push("/publicaciones");
   for (const category of ["all", ...Object.keys(categoryInfo)]) {
     const base = category === "all" ? "/catalogo" : `/catalogo/${category}`;
     if (category !== "all") paths.push(base);

@@ -17,6 +17,7 @@
     "test:seo": "node scripts/check-seo.mjs",
     "test:language": "node scripts/check-content-language.mjs",
     "test:spelling": "node scripts/check-content-spelling.mjs",
+    "test:publications": "node scripts/check-publications.mjs",
     "lint": "eslint . --ignore-pattern .next"
   },
   "dependencies": {
