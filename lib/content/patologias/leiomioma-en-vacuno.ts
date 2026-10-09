@@ -1,96 +1,68 @@
 import type { PathologyText } from "../../pathology-text";
 
 const content: PathologyText = {
-  "summary": "Tumor benigno originado en músculo liso, descrito en el tracto genital bovino.",
-  "system": "Neoplasia de músculo liso",
-  "documentSections": [
+  summary: "El leiomioma es una neoplasia benigna de músculo liso. En bovinos se ha descrito en el útero, el cérvix y la vagina; su importancia clínica depende de la localización y del efecto de la masa sobre la función reproductiva.",
+  system: "Neoplasia de músculo liso",
+  // The reference document describes a different disease, so it supplies no local case findings.
+  documentSections: [],
+  sections: [
     {
-      "id": "morfologia",
-      "title": "Características y observaciones",
-      "paragraphs": [
-        "Primer caso de síndrome tipo Prune Belly en una ternera de raza Holstein con quistes hepáticos serosos.",
-        "El ternero de raza Holstein había nacido quince días atrás, producto de un parto distócico que finalmente terminó con una cesárea. Cuando se presentó a la clínica se encontraba en sus primeras seis horas tras el nacimiento y en buena calidad, suministrado en sus primeras seis horas tras el nacimiento y en la buena calidad, suministrado en sus primeras seis horas tras el nacimiento, la nutrición y en la primera revisión clínica, fue evaluado por el personal y se tomó habitualmente (12,5 kg), siendo normales tanto el reflejo de succión como el apetito.",
-        "Sin embargo, a simple vista el perfil del ternero resultaba extraño, dando la impresión de encontrarse muy bajo de peso y con un volumen abdominal muy reducido. A la palpación externa se identificó un volumen abdominal muy reducido y una vejiga notablemente distendida, con un volumen aproximado de 1,5 litros de líquido. El primer diagnóstico fue la presencia de una hernia abdominal, pero las constantes vitales eran normales, por lo que se decidió mantenerlo en observación y mediante ultrasonografía se determinó que la vejiga era de un tamaño aumentado. Se realizó una laparotomía y con ello evaluar la transferencia previa de líquidos, donde se evidenciaron las principales alteraciones del caso, confirmando con ello que el animal había recibido una cantidad conveniente de calostro.",
-        "A la palpación abdominal evidenciamos como la pared abdominal era muy delgada y cómo las vísceras abdominales se encontraban desplazadas hacia la derecha y a nivel muy superior. Se observó que la vejiga se encontraba distendida a través de la pared abdominal, la cual protruye a nivel de la línea media. La vejiga era bilobulada debido a la contracción contralateral a nivel de la unión costocondral adoptando forma de reloj de arena."
-      ]
+      id: "concepto",
+      title: "Descripción científica",
+      paragraphs: [
+        "El leiomioma es un tumor mesenquimal benigno formado por células con diferenciación de músculo liso. En el tracto genital bovino puede originarse en la pared uterina y también se han publicado casos cervicales y vaginales.",
+        "Es una neoplasia poco frecuente en bovinos. Puede detectarse durante la investigación de problemas reproductivos o como un hallazgo incidental en la inspección del aparato genital."
+      ],
+      referenceIds: ["leiomyomaSurgery", "leiomyomaAtlas"]
     },
     {
-      "id": "relevancia",
-      "title": "Relevancia veterinaria",
-      "paragraphs": [
-        "El estudio anatomopatológico reveló cómo los músculos cutáneos femoral, abdominal, craneal y los músculos abdominales presentaban una apariencia normal. Sin embargo, los músculos transversos abdominales, oblicuos externo e interno y recto abdominal presentaban unas fibras musculares esqueléticas de pequeño tamaño, con hipoplasia muscular; probablemente debido a una falta de desarrollo o a una atrofia muscular.",
-        "En base a la referencia bibliográfica consultada nos apuntamos hacia la hipótesis de la etiología directa de la distensión abdominal, siendo los quistes hepáticos los causantes de las lesiones musculares.",
-        "Dado que otras patologías relacionadas por distintas etiologías (malformaciones, tumores, infecciones) produce distensión abdominal congénita en bóvidos (Barker, 1993), es posible que esto mismo suceda en el caso de los quistes hepáticos, los cuales pueden alcanzar tamaños enormes cuando son únicos, como en el caso de este ternero. Los quistes hepáticos en bovinos son raros, reportándose en la bibliografía la presencia de distensión abdominal ni la presencia de pared abdominal de gran tamaño, bien distendidas, bien agrupadas, también es cierto que la bibliografía de la que se dispone es escasa y antigua.",
-        "El síndrome de humanos denominado como \"Síndrome Prune Belly\" está definido por una tríada de malformaciones congénitas, una de las cuales es la ausencia o disminución de la musculatura abdominal, además de la falta de tamaño de las paredes abdominales que está presente en nuestro caso. La etiología del síndrome se desconoce pudiendo deberse a las lesiones."
-      ]
+      id: "mecanismo",
+      title: "Origen y mecanismo",
+      paragraphs: [
+        "La lesión corresponde a una proliferación neoplásica de células musculares lisas. La etiología del leiomioma uterino bovino no está establecida; no debe atribuirse una causa específica sin evidencia del caso.",
+        "Cuando crece hacia la luz uterina, la masa puede ocupar espacio y dificultar la función reproductiva. Su efecto depende de la ubicación y de la obstrucción que produzca."
+      ],
+      referenceIds: ["leiomyoma", "leiomyomaSurgery"]
+    },
+    {
+      id: "morfologia",
+      title: "Características anatomopatológicas",
+      paragraphs: [
+        "Macroscópicamente puede presentarse como una masa nodular, delimitada y firme. En la pared uterina se han descrito crecimientos solitarios que, por su consistencia, pueden confundirse con un absceso durante la palpación."
+      ],
+      points: [
+        "Registrar el órgano de origen, la ubicación, las dimensiones y la relación de la masa con la luz del órgano.",
+        "Evaluar la superficie de corte y la cantidad de tejido conjuntivo, que puede modificar su consistencia.",
+        "Microscópicamente se observan haces entrecruzados de células musculares lisas; el estudio del tejido permite clasificar la neoplasia."
+      ],
+      referenceIds: ["leiomyomaAtlas", "leiomyomaSurgery", "leiomyoma"]
+    },
+    {
+      id: "diagnostico",
+      title: "Enfoque diagnóstico",
+      paragraphs: [
+        "La palpación y la ecografía permiten localizar la masa y valorar su relación con el tracto genital. La apariencia ecográfica orienta la evaluación, pero no confirma por sí sola que se trate de un leiomioma."
+      ],
+      points: [
+        "Correlacionar los hallazgos con los antecedentes reproductivos y la exploración clínica.",
+        "Confirmar la naturaleza del tumor mediante biopsia o tejido obtenido durante cirugía o necropsia, seguido de histopatología.",
+        "Considerar otras lesiones uterinas y tumores mesenquimales en el diagnóstico diferencial; no clasificar la masa solo por su tamaño.",
+        "Valorar la organización celular y el tejido conjuntivo; las tinciones especiales pueden complementar el examen histológico."
+      ],
+      referenceIds: ["leiomyoma", "leiomyomaSurgery"]
+    },
+    {
+      id: "relevancia",
+      title: "Relevancia veterinaria",
+      paragraphs: [
+        "Un tumor benigno puede tener consecuencias funcionales importantes. Se han documentado leiomiomas uterinos asociados a infertilidad y obstrucción del cuerno uterino en vacas.",
+        "En casos publicados se ha realizado extirpación quirúrgica y seguimiento reproductivo. La recuperación descrita en un animal no permite garantizar el mismo resultado en otros: la decisión depende de la localización de la lesión y de la evaluación veterinaria."
+      ],
+      referenceIds: ["leiomyoma", "leiomyomaSurgery"]
     }
   ],
-  "sections": [
-    {
-      "id": "concepto",
-      "title": "Descripción científica",
-      "paragraphs": [
-        "Tumor benigno originado en músculo liso, descrito en el tracto genital bovino."
-      ],
-      "referenceIds": [
-        "leiomyoma"
-      ]
-    },
-    {
-      "id": "mecanismo",
-      "title": "Origen y mecanismo",
-      "paragraphs": [
-        "Su denominación depende del patrón histológico, no solamente del tamaño o la consistencia de la masa."
-      ],
-      "referenceIds": [
-        "leiomyoma"
-      ]
-    },
-    {
-      "id": "morfologia",
-      "title": "Características anatomopatológicas",
-      "paragraphs": [],
-      "points": [
-        "Masa delimitada cuya ubicación debe documentarse.",
-        "Histología con haces de células de diferenciación muscular lisa."
-      ],
-      "referenceIds": [
-        "leiomyoma"
-      ]
-    },
-    {
-      "id": "diagnostico",
-      "title": "Enfoque diagnóstico",
-      "paragraphs": [],
-      "points": [
-        "Imagen para localizar la lesión e histopatología para clasificarla.",
-        "Diferenciar leiomioma de otros tumores mesenquimales."
-      ],
-      "referenceIds": [
-        "leiomyoma"
-      ]
-    },
-    {
-      "id": "relevancia",
-      "title": "Relevancia veterinaria",
-      "paragraphs": [
-        "El efecto clínico depende de la localización y del compromiso mecánico de las estructuras vecinas."
-      ],
-      "referenceIds": [
-        "leiomyoma"
-      ]
-    }
-  ],
-  "localCases": [
-    {
-      "title": "Observaciones del caso",
-      "facts": [
-        "A la palpación externa se identificó un volumen abdominal muy reducido y una vejiga notablemente distendida, con un volumen aproximado de 1,5 litros de líquido.",
-        "Se observó que la vejiga se encontraba distendida a través de la pared abdominal, la cual protruye a nivel de la línea media."
-      ]
-    }
-  ],
-  "sourceCount": 1
+  localCases: [],
+  sourceCount: 1
 };
 
 export default content;

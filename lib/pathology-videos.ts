@@ -29,7 +29,6 @@ export const pathologyVideos: Record<string, PathologyVideo[]> = {
     drive("1onySUDGBD-dSe4n8Lc4m1iYT2aLuHmeY", "hipospadia-en-ovino", "video-3.mts.web.mp4"),
     drive("1SzeZW1i8pjAeW7RhA7PcL4M45eYpLqPb", "hipospadia-en-ovino", "video-4.mov.web.mp4"),
   ],
-  "leiomioma-en-vacuno": [drive("1tLl4oCJdc3cGtU1y6GJEpSIoiHV0p-Ng", "leiomioma-en-vacuno", "video-1.vob.web.mp4")],
   "momificacion-fetal": [drive("1EdxJuUctdqY3iQdKnZGq9uDs7c67A_-J", "momificación-fetal", "video-1.mp4.web.mp4")],
   "pie-zambo-en-cuy": [drive("1w3Wqiu7ccM35aqKy3cntwBIB9mkpE1Os", "pie-zambo-en-cuy", "video-1.wmv.web.mp4")],
   "queratomeningocele": [drive("1exVN5EWUZ3yf1-8xmQb-OEVqqLVbCd1r", "queratomeningocele", "video-1.wmv.web.mp4")],

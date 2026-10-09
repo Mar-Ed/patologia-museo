@@ -30,7 +30,7 @@ const content: PathologyText = {
       "paragraphs": [
         "Especie: Porcino Nombre: Mechita Raza: Criollo Edad: 10 semanas Sexo: Hembra Color: Colorado Fecha de nacimiento: 21/08/2011",
         "Raza: Criollo Nombre: Panchita N.º de partos: Tercer parto Edad: 6 años",
-        "Temperatura: 39.3 °C Frecuencia respiratoria: 15 por minuto Frecuencia cardiaca: 78 por minuto Color de mucosas: Rosada (aparentemente normal)"
+        "Temperatura: 39.3 °C Frecuencia respiratoria: 15 por minuto Frecuencia cardíaca: 78 por minuto Color de mucosas: Rosada (aparentemente normal)"
       ]
     },
     {

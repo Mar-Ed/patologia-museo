@@ -84,7 +84,7 @@ const description = milagritos.documentSections.find(section => section.id === "
 const narrativeFacts = ["Sigueropata", "un solo cerebro", "seis litros de leche al día", "neumonía y shock", "no podía establecerse una etiología definitiva", "supervivencia mayor a la esperada"];
 narrativeFacts.forEach((fact, index) => assert.ok(description.paragraphs[index].includes(fact), `Milagritos: missing supplied paragraph ${index + 1}`));
 assert.equal(description.paragraphs.length, 6);
-assert.ok(milagritos.item.summary.includes("Sigueropata"));
+assert.ok(milagritos.item.summary.startsWith("El caso “Milagritos” corresponde a un ternero nacido en Cajamarca"));
 assert.ok(!/Voy a elaborarlo|no reportado|This report describes|Diprosopia is a rare/.test(JSON.stringify(milagritos)), "Old unedited report must not leak into the case");
 assert.ok(content.getCaseContent("vesicula-doble-en-canino").sections[0].paragraphs[0].includes("biliar"));
 assert.equal(content.getCaseContent("no-existe"), undefined);

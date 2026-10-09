@@ -16,6 +16,7 @@
     "test:motion": "node scripts/check-scroll-reveal.mjs",
     "test:seo": "node scripts/check-seo.mjs",
     "test:language": "node scripts/check-content-language.mjs",
+    "test:spelling": "node scripts/check-content-spelling.mjs",
     "lint": "eslint . --ignore-pattern .next"
   },
   "dependencies": {

@@ -2,7 +2,7 @@ import type { PathologyText } from "../../pathology-text";
 
 const content: PathologyText = {
   cover: "/patologias/sindrome-de-prune-belly-y-afasia/catalogo4.webp",
-  "summary": "El Síndrome de Prune Belly, también llamado síndrome de Eagle - Barret o síndrome del abdomen en ciruela pasa, es una entidad caracterizada por la tríada: deficiencia de la musculatura de la pared abdominal, malformaciones urinarias (hidronefrosis, megaureter) y criptorquidia bilateral. Con una incidencia de uno en 30,000 a uno en 50,000 nacidos vivos y un predominio en el sexo masculino 20:1, o bien donde solo 5% de mujeres; por lo que se cree puede estar involucrado el cromosoma X, sin embargo la causa aún no está clara. Se calcula que 20% de todos los pacientes fallecen en el periodo neonatal como consecuencia de anomalías del tracto urinario.",
+  "summary": "El Síndrome de Prune Belly, también llamado síndrome de Eagle - Barret o síndrome del abdomen en ciruela pasa, es una entidad caracterizada por la tríada: deficiencia de la musculatura de la pared abdominal, malformaciones urinarias (hidronefrosis, megauréter) y criptorquidia bilateral. Con una incidencia de uno en 30,000 a uno en 50,000 nacidos vivos y un predominio en el sexo masculino 20:1, o bien donde solo 5% de mujeres; por lo que se cree puede estar involucrado el cromosoma X, sin embargo la causa aún no está clara. Se calcula que 20% de todos los pacientes fallecen en el periodo neonatal como consecuencia de anomalías del tracto urinario.",
   "system": "Pared abdominal · urogenital",
   "documentSections": [
     {
@@ -10,7 +10,7 @@ const content: PathologyText = {
       "title": "Descripción de la patología",
       "paragraphs": [
         "En 1839 Frohlich describió por primera vez a un niño que presentaba defecto de la musculatura abdominal lateral, pecho en quilla y falta de descenso testicular. En 1895 Parker asoció este síndrome con malformaciones de las vías urinarias: hidrocele, hidronefrosis, hidroureter y vejiga grande. Puede haber falta de uretra prostática, en estos casos la uretra anterior usualmente está asociada con dilatación y/o estenosis de la uretra membranosa. (Mata y Chávez, 2013).",
-        "El Síndrome de Prune Belly, también llamado síndrome de Eagle-Barret o síndrome del abdomen en ciruela de pasa, es una entidad caracterizada por la tríada: deficiencia de la musculatura de la pared abdominal, malformaciones urinarias (hidronefrosis, megaureter) y criptorquidia bilateral. Con una incidencia de uno en 30,000 a uno en 50,000 nacidos vivos y un predominio en el sexo masculino de 20:1, o bien donde solo 5% son mujeres; por lo que se cree puede estar involucrado el cromosoma X. Se calcula que 20% de todos los pacientes fallecen en el periodo neonatal como consecuencia de anomalías del tracto urinario."
+        "El Síndrome de Prune Belly, también llamado síndrome de Eagle-Barret o síndrome del abdomen en ciruela de pasa, es una entidad caracterizada por la tríada: deficiencia de la musculatura de la pared abdominal, malformaciones urinarias (hidronefrosis, megauréter) y criptorquidia bilateral. Con una incidencia de uno en 30,000 a uno en 50,000 nacidos vivos y un predominio en el sexo masculino de 20:1, o bien donde solo 5% son mujeres; por lo que se cree puede estar involucrado el cromosoma X. Se calcula que 20% de todos los pacientes fallecen en el periodo neonatal como consecuencia de anomalías del tracto urinario."
       ]
     },
     {

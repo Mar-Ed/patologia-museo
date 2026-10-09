@@ -1,14 +1,14 @@
 import type { PathologyText } from "../../pathology-text";
 
 const content: PathologyText = {
-  "summary": "✓ Carcinoma de células escamosas ✓ Carcinoma de tercer parpado ✓ Cáncer de ojo ✓ B.O.S.C.C.",
+  "summary": "✓ Carcinoma de células escamosas ✓ Carcinoma de tercer párpado ✓ Cáncer de ojo",
   "system": "Ocular · neoplasia epitelial",
   "documentSections": [
     {
       "id": "concepto",
       "title": "Descripción de la patología",
       "paragraphs": [
-        "✓ Carcinoma de células escamosas ✓ Carcinoma de tercer parpado ✓ Cáncer de ojo ✓ B.O.S.C.C."
+        "✓ Carcinoma de células escamosas ✓ Carcinoma de tercer párpado ✓ Cáncer de ojo"
       ]
     },
     {

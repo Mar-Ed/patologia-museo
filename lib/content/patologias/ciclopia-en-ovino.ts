@@ -9,9 +9,9 @@ const content: PathologyText = {
       "title": "Descripción de la patología",
       "paragraphs": [
         "(Malformación congénita caracterizada por la presencia de un solo ojo central)",
-        "La ciclopia es una malformación congénita severa caracterizada por la presencia de un único ojo ubicado en la región central de la cara debido a una alteración en la separación normal de los hemisferios cerebrales y estructuras faciales durante el desarrollo embrionario.",
+        "La ciclopía es una malformación congénita severa caracterizada por la presencia de un único ojo ubicado en la región central de la cara debido a una alteración en la separación normal de los hemisferios cerebrales y estructuras faciales durante el desarrollo embrionario.",
         "Esta anomalía pertenece al grupo de defectos craneofaciales conocidos como holoprosencefalia y se produce por alteraciones durante las primeras etapas de formación del sistema nervioso central.",
-        "En ovinos, la ciclopia es una condición poco frecuente, pero representa una alteración importante dentro de la teratología veterinaria debido a la gravedad de sus consecuencias. Los fetos afectados generalmente presentan deformaciones faciales severas, ausencia o reducción de estructuras nasales y alteraciones incompatibles con una vida normal."
+        "En ovinos, la ciclopía es una condición poco frecuente, pero representa una alteración importante dentro de la teratología veterinaria debido a la gravedad de sus consecuencias. Los fetos afectados generalmente presentan deformaciones faciales severas, ausencia o reducción de estructuras nasales y alteraciones incompatibles con una vida normal."
       ]
     },
     {
@@ -20,17 +20,17 @@ const content: PathologyText = {
       "paragraphs": [
         "El desarrollo del ojo y cerebro inicia durante las primeras etapas embrionarias a partir del prosencéfalo.",
         "1. El prosencéfalo se divide en dos hemisferios cerebrales. 2. Se forman dos órbitas independientes. 3. Se desarrollan los dos ojos separados.",
-        "Cuando este proceso falla, las estructuras permanecen fusionadas y puede producirse ciclopia.",
-        "Las causas de la ciclopia pueden estar relacionadas con diversos factores:"
+        "Cuando este proceso falla, las estructuras permanecen fusionadas y puede producirse ciclopía.",
+        "Las causas de la ciclopía pueden estar relacionadas con diversos factores:"
       ]
     },
     {
       "id": "morfologia",
       "title": "Características y observaciones",
       "paragraphs": [
-        "Especie: Ovino (Ovis aries). Sexo: Según reporte clínico. Edad: Feto / recién nacido. Alteración observada: Ciclopia congénita.",
+        "Especie: Ovino (Ovis aries). Sexo: Según reporte clínico. Edad: Feto / recién nacido. Alteración observada: Ciclopía congénita.",
         "Durante la evaluación de un feto ovino se observa una alteración evidente en la región facial.",
-        "El animal presenta un único ojo ubicado en posición central, acompañado de deformaciones faciales compatibles con ciclopia.",
+        "El animal presenta un único ojo ubicado en posición central, acompañado de deformaciones faciales compatibles con ciclopía.",
         "También pueden observarse alteraciones asociadas en la formación del cráneo y estructuras cerebrales."
       ]
     },
@@ -45,7 +45,7 @@ const content: PathologyText = {
       "id": "relevancia",
       "title": "Relevancia veterinaria",
       "paragraphs": [
-        "La ciclopia en ovinos representa una alteración congénita severa relacionada con defectos en el desarrollo embrionario del cerebro y la cara.",
+        "La ciclopía en ovinos representa una alteración congénita severa relacionada con defectos en el desarrollo embrionario del cerebro y la cara.",
         "Esta anomalía demuestra la importancia de los procesos de separación del prosencéfalo y formación de las estructuras faciales durante las primeras etapas de la gestación.",
         "Aunque es poco frecuente, tiene importancia dentro de la producción ovina debido a las pérdidas reproductivas ocasionadas por la muerte fetal y la baja viabilidad de los animales afectados.",
         "El estudio de esta malformación permite comprender mejor la influencia de factores genéticos y ambientales sobre el desarrollo embrionario."
@@ -110,7 +110,7 @@ const content: PathologyText = {
     {
       "title": "Observaciones del caso",
       "facts": [
-        "El animal presenta un único ojo ubicado en posición central, acompañado de deformaciones faciales compatibles con ciclopia."
+        "El animal presenta un único ojo ubicado en posición central, acompañado de deformaciones faciales compatibles con ciclopía."
       ]
     }
   ],

@@ -48,7 +48,7 @@ const facts = {
   "caso-sindactilia-porcino": ["San Isidro", "nació muerto", "21/09/2012", "Fernández Rafael Lorenzo"],
   "sindactilia-en-porcino": ["Sindactilia: adherencia congénita o accidental", "21 de septiembre de 2012"],
   "sindrome-de-prune-belly-y-afasia": ["En 1839 Frohlich", "tipo Prune Belly", "quistes hepáticos serosos"],
-  "leiomioma-en-vacuno": ["tipo Prune Belly", "Holstein", "quistes hepáticos serosos"],
+  "leiomioma-en-vacuno": ["neoplasia benigna", "músculo liso", "histopatología", "infertilidad"],
 };
 for (const [slug, expected] of Object.entries(facts)) {
   const entry = JSON.stringify(text.pathologyText[slug]);

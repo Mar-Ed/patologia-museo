@@ -1,7 +1,7 @@
 import type { PathologyText } from "../../pathology-text";
 
 const content: PathologyText = {
-  "summary": "“Milagritos” fue un ternero nacido en la comunidad de Sigueropata, provincia de Chota, departamento de Cajamarca, que presentó una malformación congénita denominada bicefalia incompleta. El animal fue trasladado a la Facultad de Medicina Veterinaria de la Universidad Nacional de Cajamarca, donde quedó bajo observación y estudio de especialistas.",
+  "summary": "El caso “Milagritos” corresponde a un ternero nacido en Cajamarca que presentó una malformación congénita denominada bicefalia incompleta, caracterizada por la presencia de una duplicación parcial de estructuras faciales. El animal presentaba dos caras, cuatro ojos y dos hocicos, pero con un solo encéfalo, siendo considerado un caso poco frecuente dentro de las alteraciones del desarrollo embrionario en bovinos. Debido a sus características anatómicas y su supervivencia, fue evaluado como un caso de interés en medicina veterinaria y teratología.",
   "system": "Craneofacial · duplicación",
   "documentSections": [
     {
