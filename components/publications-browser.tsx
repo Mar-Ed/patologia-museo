@@ -40,19 +40,20 @@ export function PublicationsBrowser({ items }: { items: Publication[] }) {
       </div>
       <div id="publicaciones-listado" className={styles.grid}>
         {filtered.map(publication => <article key={publication.id} className={styles.card} data-scroll-reveal="" aria-labelledby={`titulo-${publication.id}`}>
-          <div className={styles.cardTop}><span className={styles.type}><FileText size={16} aria-hidden="true" />{publication.type}</span><span className={styles.year}>{publication.year}</span></div>
+          <div className={styles.cardTop}><span className={styles.type}><FileText size={16} aria-hidden="true" />{publication.type}</span><span className={styles.year}>{publication.dateLabel}</span></div>
           <span className={styles.topic}>{publication.topic}</span>
           <h3 id={`titulo-${publication.id}`}>{publication.title}</h3>
           <p className={styles.authors}>{publication.authors.join(" · ")}</p>
+          <p className={styles.journal}><BookOpen size={16} aria-hidden="true" /><span>{publication.journal}</span></p>
           <p className={styles.summary}>{publication.summary}</p>
           <ul className={styles.tags} aria-label="Palabras clave">{publication.keywords.map(keyword => <li key={keyword}>{keyword}</li>)}</ul>
           <div className={styles.cardBottom}>
-            {publication.isDemo && <span className={styles.demoBadge}>Ejemplo ficticio</span>}
             <details className={styles.details}>
-              <summary><span>{publication.isDemo ? "Consultar ejemplo" : "Ver resumen"}</span><ChevronDown size={17} aria-hidden="true" /></summary>
-              <div className={styles.abstract}><h4>Resumen{publication.isDemo ? " de muestra" : ""}</h4><p>{publication.abstract}</p></div>
+              <summary><span>Ver resumen completo</span><ChevronDown size={17} aria-hidden="true" /></summary>
+              <div className={styles.abstract}><h4>Resumen</h4><p>{publication.abstract}</p></div>
             </details>
-            {!publication.isDemo && publication.url?.startsWith("https://") && <a className={styles.readLink} href={publication.url} target="_blank" rel="noopener noreferrer">Leer publicación<span className="sr-only"> (abre en otra pestaña)</span><ArrowUpRight size={17} aria-hidden="true" /></a>}
+            {publication.url.startsWith("https://") && <a className={styles.readLink} href={publication.url} target="_blank" rel="noopener noreferrer">Leer publicación<span className="sr-only">: {publication.title} (abre en otra pestaña)</span><ArrowUpRight size={17} aria-hidden="true" /></a>}
+            <p className={styles.doi}>DOI: {publication.url.replace("https://doi.org/", "")}</p>
           </div>
         </article>)}
         {filtered.length === 0 && <div className={styles.empty}><BookOpen size={30} strokeWidth={1.4} aria-hidden="true" /><h3>No encontramos publicaciones</h3><p>Prueba otro título o palabra clave, o limpia los filtros para consultar todos los trabajos.</p>{hasFilters && <button className="button-secondary" onClick={clearFilters}>Mostrar todas las publicaciones</button>}</div>}
