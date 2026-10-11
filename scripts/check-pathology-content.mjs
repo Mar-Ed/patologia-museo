@@ -50,7 +50,7 @@ for (const item of catalog) {
   assert.ok(record.sections.every(section => section.paragraphs.length || section.points?.length));
   assert.equal(new Set(record.gallery).size, record.gallery.length);
   if (record.videos.length) {
-    assert.equal(record.gallery.length, 0, `Videos must replace the gallery: ${item.slug}`);
+    assert.equal(record.item.galleryCount, record.gallery.length, `Videos must preserve the photo count: ${item.slug}`);
     for (const video of record.videos) {
       const poster = video.poster;
       assert.ok(fs.existsSync(path.join("public", decodeURIComponent(poster))), `Missing video preview: ${poster}`);

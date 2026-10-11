@@ -1,11 +1,14 @@
 import assert from "node:assert/strict";
 import { NextRequest } from "next/server.js";
-import { readModule } from "./content-modules.mjs";
+import { readModule, loadContentModules } from "./content-modules.mjs";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
 // No live credentials, Auth requests, email or remote writes are used by this test.
 const env = { NODE_ENV: "development", SUPABASE_SECRET_KEY: "isolated-test-secret" };
+const { getPathologyIndex } = readModule("lib/pathology-index.ts", { "server-only": {} });
+const expectedIndex = loadContentModules().content.getPathologyRecords().map(({ slug, name }) => ({ slug, name }));
+assert.equal(JSON.stringify(getPathologyIndex()), JSON.stringify(expectedIndex));
 const security = readModule("lib/comments/security.ts", { "server-only": {}, "@/lib/site-config": { SITE_URL: "https://museum.example" } }, {
   process: { env }, URL, URLSearchParams, Buffer, AbortSignal,
   fetch: async () => { throw new Error("Security validation must not call an external service"); },
@@ -49,7 +52,7 @@ const client = {
 };
 const imports = {
   "@/lib/comments/security": security,
-  "@/lib/pathology-content": { getPathologyRecords: () => [{ slug: "test-pathology", name: "Test" }] },
+  "@/lib/pathology-index": { getPathologyIndex: () => [{ slug: "test-pathology", name: "Test" }] },
   "@/lib/supabase/server": { publicClient: () => client, serviceClient: () => client, sessionClient: async () => client, adminSession: async () => authenticated ? { client, user: { id: "admin" } } : null },
 };
 const comments = readModule("app/api/comments/route.ts", imports, { URLSearchParams, process: { env } });

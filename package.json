@@ -9,7 +9,7 @@
     "predev": "node scripts/prepare-site.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/prepare-site.mjs",
-    "build": "next build && node scripts/check-footer-css.mjs",
+    "build": "next build && node scripts/check-footer-css.mjs && node scripts/check-function-bundles.mjs",
     "start": "next start",
     "prepare:site": "node scripts/prepare-site.mjs",
     "test:performance": "node scripts/check-catalog-interactions.mjs && node scripts/check-scientific-tabs.mjs && node scripts/check-performance.mjs",

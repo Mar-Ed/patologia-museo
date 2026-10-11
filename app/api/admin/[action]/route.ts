@@ -1,7 +1,7 @@
 import { type NextRequest } from "next/server";
 import { adminSession, serviceClient, sessionClient } from "@/lib/supabase/server";
 import { appOrigin, checkOrigin, failure, field, fingerprint, json, networkId, readBody, RequestError, validEmail, validUuid } from "@/lib/comments/security";
-import { getPathologyRecords } from "@/lib/pathology-content";
+import { getPathologyIndex } from "@/lib/pathology-index";
 
 export const dynamic = "force-dynamic";
 type Context = { params: Promise<{ action: string }> };
@@ -27,7 +27,7 @@ export async function GET(request: NextRequest, context: Context) {
     const slug = params.get("slug") || "";
     const search = (params.get("search") || "").trim();
     if (!["pending", "approved", "rejected"].includes(status) || !Number.isSafeInteger(page) || page < 0 || page > 10000 || search.length > 100) throw new RequestError(400, "Los filtros no son válidos.");
-    if (slug && !getPathologyRecords().some(item => item.slug === slug)) throw new RequestError(400, "La ficha no es válida.");
+    if (slug && !getPathologyIndex().some(item => item.slug === slug)) throw new RequestError(400, "La ficha no es válida.");
     let query = client.from("museum_comments").select("*", { count: "exact" }).eq("status", status);
     if (slug) query = query.eq("pathology_slug", slug);
     if (search) query = query.ilike("body", `%${search.replace(/[\\%_]/g, "\\$&")}%`);

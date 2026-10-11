@@ -53,7 +53,7 @@ export const getCaseContent = cache((slug: string): CaseContent | undefined => {
   const cover = files.find(x => /^portada\.webp$/i.test(x));
   const { documentSections, sections, localCases, system, sourceCount } = text;
   const referenceIds = [...new Set(sections.flatMap(section => section.referenceIds))];
-  const item: Pathology = { ...original, summary: text.summary, cover: text.cover ?? (cover ? urlFor(folder!, cover) : undefined), galleryCount: videos.length ? 0 : gallery.length, documentCount: sourceCount };
+  const item: Pathology = { ...original, summary: text.summary, cover: text.cover ?? (cover ? urlFor(folder!, cover) : undefined), galleryCount: gallery.length, documentCount: sourceCount };
   const preparedCover = item.cover ? getPreparedImage(item.cover) : undefined;
   if (preparedCover) {
     item.coverThumbnail = preparedCover.thumbnail;
@@ -65,7 +65,7 @@ export const getCaseContent = cache((slug: string): CaseContent | undefined => {
   if (slug === "hidronefrosis-unilateral-en-bovino-y-porcino") item.species = "Bovino / Porcino";
 
   return {
-    item, system, gallery: videos.length ? [] : gallery, galleryPreviews: videos.length ? [] : gallery.map(getPreparedImage), videos, documentSections, sections, localCases,
+    item, system, gallery, galleryPreviews: gallery.map(getPreparedImage), videos, documentSections, sections, localCases,
     references: referenceIds.map(id => scientificReferences[id]), sourceCount,
     study: [
       { question: "¿Cómo se define esta alteración?", answer: sections[0].paragraphs.join(" ") },

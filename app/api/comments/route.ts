@@ -1,13 +1,13 @@
 import { type NextRequest } from "next/server";
 import { randomUUID } from "node:crypto";
-import { getPathologyRecords } from "@/lib/pathology-content";
+import { getPathologyIndex } from "@/lib/pathology-index";
 import { publicClient, serviceClient } from "@/lib/supabase/server";
 import { checkOrigin, failure, field, fingerprint, issueVisitor, json, networkId, readBody, RequestError, validEmail, validUuid, visitorId } from "@/lib/comments/security";
 import type { PublicComment } from "@/lib/comments/types";
 
 export const dynamic = "force-dynamic";
 function checkSlug(slug: string) {
-  if (!getPathologyRecords().some(item => item.slug === slug)) throw new RequestError(404, "No se encontró la ficha.");
+  if (!getPathologyIndex().some(item => item.slug === slug)) throw new RequestError(404, "No se encontró la ficha.");
 }
 export async function GET(request: NextRequest) {
   try {
