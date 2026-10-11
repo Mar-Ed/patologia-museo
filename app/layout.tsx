@@ -9,6 +9,7 @@ import "./globals.css";
 import "./footer.css";
 import "./scientific.css";
 import "./motion.css";
+import "./comments.css";
 
 export const metadata: Metadata = {
   ...pageMetadata(SITE_NAME, SITE_DESCRIPTION, "/"),

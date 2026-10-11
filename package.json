@@ -18,10 +18,14 @@
     "test:language": "node scripts/check-content-language.mjs",
     "test:spelling": "node scripts/check-content-spelling.mjs",
     "test:publications": "node scripts/check-publications.mjs",
+    "test:comments:database": "node scripts/check-comments-database.mjs",
+    "test:comments:api": "node scripts/check-comments-api.mjs",
+    "check:supabase": "node --env-file=.env.local scripts/check-supabase-connection.mjs",
     "lint": "eslint . --ignore-pattern .next"
   },
   "dependencies": {
-    "sharp": "^0.35.5",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.3",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "framer-motion": "^13.4.5",
@@ -30,9 +34,12 @@
     "radix-ui": "^1.6.7",
     "react": "19.2.6",
     "react-dom": "19.2.6",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.5",
     "tailwind-merge": "3.6.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
